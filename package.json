@@ -4,7 +4,8 @@
   "description": "Test project",
   "main": "index.html",
   "dependencies": {
-    "eslint": "^4.13.1"
+    "eslint": "^4.13.1",
+    "jscs": "^3.0.7"
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1",
