@@ -6,3 +6,7 @@ alert(a);
 if (a === b) {
     alert("equals");
 }
+// this is new feature test :)
+if (a === "test") {
+    alert("test");
+}
