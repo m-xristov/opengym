@@ -140,6 +140,7 @@ module.exports = {
         "no-const-assign": ERROR,
         "no-dupe-class-members": ERROR,
         "no-this-before-super": ERROR,
+
         //"no-var": WARN,
         "object-shorthand": [ WARN, "never" ],
         "prefer-arrow-callback": WARN,
@@ -203,6 +204,7 @@ module.exports = {
         "semi-spacing": [ WARN, { "before": false, "after": true }],
         "semi": [ ERROR, "always" ],
         "sort-vars": OFF,
+
         //"space-after-keywords": [ WARN, "always" ],
         //"space-before-blocks": [ WARN, "always" ],
         //"space-before-function-paren": [ WARN, "never" ],

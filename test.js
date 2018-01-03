@@ -1,16 +1,6 @@
-var a, b = 1, p,
-    d = 10, f = { obj: 1 },
-    hasBarProperty = f.hasOwnProperty("bar");
-alert( a ); // this is a test file
-if ( a === b ) {
-    alert( "equals" );
+function greeter(person) {
+    return "Hello, " + person;
 }
-alert( hasBarProperty );
-if ( d === f ) {
-    alert( "asdf" );
-    for ( p in f ) {
-        if (f.hasOwnProperty(p)) {
-            alert(p);
-        }
-    }
-}
+var user = "Jane User1";
+document.body.innerHTML = greeter(user);
+//# sourceMappingURL=test.js.map
