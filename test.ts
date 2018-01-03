@@ -1,7 +1,10 @@
-function greeter(person) {
-    return "Hello, " + person;
+function test():void {
+    console.log(1234);
 }
-
-let user = "Jane User1";
-
-document.body.innerHTML = greeter(user);
+test();
+class Startup {
+    public static main(): string {
+        return "34";
+    }
+}
+console.log(Startup.main());

@@ -1,6 +1,14 @@
-function greeter(person) {
-    return "Hello, " + person;
+function test() {
+    console.log(1234);
 }
-var user = "Jane User1";
-document.body.innerHTML = greeter(user);
+test();
+var Startup = /** @class */ (function () {
+    function Startup() {
+    }
+    Startup.main = function () {
+        return "34";
+    };
+    return Startup;
+}());
+console.log(Startup.main());
 //# sourceMappingURL=test.js.map
