@@ -8,3 +8,4 @@ bower_components
 # ignores all .js in subdirectories recursive from the current 
 # folder (does not include the current folder)
 **/*.js
+**/*.js.map

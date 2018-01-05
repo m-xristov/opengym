@@ -9,4 +9,5 @@ logger.log('1');
 logger.log('test');
 logger.log({a: 1, b: 2, c: {a: 1}, d: [1,2,3, {k: 123}]});
 logger.log('this is a test');
+logger.log(true);
 //console.log(`${person.name} ${DB.title}`);
