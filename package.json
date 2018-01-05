@@ -5,6 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "eslint": "^4.13.1",
+    "jquery": "^3.2.1",
     "jscs": "^3.0.7",
     "lite-server": "^2.1.0",
     "typescript": "^2.6.2"
@@ -14,7 +15,8 @@
     "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
     "system": "^2.0.1",
-    "systemjs": "^0.20.19"
+    "systemjs": "^0.20.19",
+    "typings": "^2.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

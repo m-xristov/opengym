@@ -7,7 +7,8 @@ declare var System: any;
 System.config({
   paths: {
     // paths serve as alias
-    'npm:': 'node_modules/'
+    'npm:': 'node_modules/',
+    'jquery': 'node_modules/jquery/dist/jquery.js'
   },
   // map tells the System loader where to look for things
   map: {
