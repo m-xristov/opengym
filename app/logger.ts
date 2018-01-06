@@ -11,7 +11,7 @@ export class Logger {
         this.idOfLogElement = this.generateId(this.countCharsOfLogElementId);
     }
     public write(message: any): void {
-        let $log = this.getLogElement();
+        let $log: JQuery = this.getLogElement();
         if (!$log || !$log.length) {
             $log = this.createLogElement();
         }
