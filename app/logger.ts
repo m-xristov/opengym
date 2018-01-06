@@ -1,6 +1,5 @@
 import $ from "jquery";
 import { ILoggerStrategy } from "./ILoggerStrategy";
-import { LoggerFormatter } from "./loggerFormatter";
 import { PrependMessageLoggerStrategy } from "./prependMessageLoggerStrategy";
 
 export class Logger {
@@ -8,7 +7,7 @@ export class Logger {
     private countCharsOfLogElementId = 10;
 
     constructor(private loggerWriterStrategy: ILoggerStrategy =
-                        new PrependMessageLoggerStrategy(new LoggerFormatter())) {
+                        new PrependMessageLoggerStrategy()) {
         this.idOfLogElement = this.generateId(this.countCharsOfLogElementId);
     }
     public write(message: any): void {
