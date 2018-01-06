@@ -12,12 +12,9 @@ export class LoggerFormatter implements ILoggerFormatter {
                 `${this.lineCounter++}: ${formattedMessage}` :
                 formattedMessage;
     }
-    private trimRight(text: string): string {
-        return text.replace(/(,[\s]+)$/g, "");
-    }
     public getStringRepresentationOfMessage(message: any): string {
-        let type: string = $.type(message),
-            text: string = "";
+        const type: string = $.type(message);
+        let text: string = "";
         switch (type) {
             case "object":
                 Object.keys(message).forEach((key) => {
@@ -36,5 +33,8 @@ export class LoggerFormatter implements ILoggerFormatter {
                 break;
         }
         return message;
+    }
+    private trimRight(text: string): string {
+        return text.replace(/(,[\s]+)$/g, "");
     }
 }
