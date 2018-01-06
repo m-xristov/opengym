@@ -1,5 +1,5 @@
 export class Person {
-    public name: string = 'David';
+    public name: string = "David";
 }
 
 //alert(1);

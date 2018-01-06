@@ -1,0 +1,14 @@
+{
+    "extends": "tslint:latest",
+    "rules": {
+        "indent": [true, "spaces"],
+        "variable-name": [true, "allow-leading-underscore"],
+        "interface-name": [true, "always-prefix"],
+        "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+      "no-empty": false,
+          "no-bitwise": false,
+          "no-submodule-imports": [true, "rxjs", "@angular/platform-browser", "@angular/core/testing"],
+        "max-classes-per-file": [false],
+          "prefer-object-spread": false
+    }
+}

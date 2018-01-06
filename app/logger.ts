@@ -1,24 +1,18 @@
 import $ from "jquery";
 import { ILoggerStrategy } from "./ILoggerStrategy";
-import { PrependMessageLoggerStrategy } from "./prependMessageLoggerStrategy";
 import { LoggerFormatter } from "./loggerFormatter";
-
-export enum LoggerMode {
-    append,
-    prepend,
-    single
-}
+import { PrependMessageLoggerStrategy } from "./prependMessageLoggerStrategy";
 
 export class Logger {
-    private idOfLogElement = '';
+    private idOfLogElement = "";
     private countCharsOfLogElementId = 10;
-    
+
     constructor(private loggerWriterStrategy: ILoggerStrategy =
                         new PrependMessageLoggerStrategy(new LoggerFormatter())) {
         this.idOfLogElement = this.generateId(this.countCharsOfLogElementId);
     }
-    public write (message: any): void {
-        var $log = this.getLogElement();
+    public write(message: any): void {
+        let $log = this.getLogElement();
         if (!$log || !$log.length) {
             $log = this.createLogElement();
         }
@@ -28,9 +22,10 @@ export class Logger {
         return $(`#${this.idOfLogElement}`);
     }
     private generateId(countChars: number): string {
-        let i:number, id: string = "",
-            possibleChars:string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
-            countOfPossibleChars: number = possibleChars.length;
+        let i: number;
+        let id: string = "";
+        const possibleChars: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        const countOfPossibleChars: number = possibleChars.length;
         for (i = 0; i < countChars; i++) {
             id += possibleChars.charAt(Math.floor(Math.random() * countOfPossibleChars));
         }
