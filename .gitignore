@@ -5,7 +5,16 @@ bower_components
 
 # Optional npm cache directory
 .npm
-# ignores all .js in subdirectories recursive from the current 
+# ignores only .js files in the root folder
+/*.js
+# ignores all .js.map in subdirectories recursive from the current 
 # folder (does not include the current folder)
-**/*.js
-**/*.js.map
+.js.map
+
+
+#Visual Studio specific files and folders
+# Ignore Visual Studio Code specific files
+.vscode/*
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/*
