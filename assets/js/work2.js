@@ -8,4 +8,6 @@
     function log() {
         console.log(test + " - " + test2);
     }
+
+    log();
 })()
