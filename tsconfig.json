@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5", //defines what sort of code ts generates, es5 because it's what most browsers currently UNDERSTANDS.
+        "module": "system",
+        "sourceMap": true,
+        "watch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
