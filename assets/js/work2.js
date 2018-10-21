@@ -2,5 +2,6 @@
  * I am working on this
  */
 (function() {
-    var test = "test";
+    var test = "test",
+        test2 = "test2";
 })()
