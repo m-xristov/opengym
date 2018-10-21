@@ -1,7 +1,7 @@
 var advancedLogger;
 
 /**
- * Logs message
+ * Logs message 
  * NOTE: For testing purposes only
  * @param {string} message
  */
